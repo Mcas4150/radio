@@ -35,8 +35,8 @@ body{
 }
 
 #logo{
-  width:100px;
-  height:100px;
+      min-width: 80px;
+    max-width: 100px;
 }
 
 
@@ -49,7 +49,6 @@ body{
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 0;
     background-color: #fcfcfc;
     z-index: 100;
     -webkit-transition: height .15s ease-in-out;
@@ -68,7 +67,7 @@ body{
 
 .topbar{
     height: 10vh;
-    min-height: 100px;
+    min-height: 10vh;
     top: 0;
     left: 0;
     display: flex;
@@ -90,10 +89,14 @@ body{
     flex-direction: row;
 }
 
+.middle{
+  height: 80vh;
+}
+
 .sidebar{
     height: 80vh;
     background: white;
-    min-width: 80px;
+    min-width: 100px;
     width: calc(8.5vw + 3px);
     max-width: 100px;
     display: flex;
@@ -174,8 +177,8 @@ body{
 
 .desktop{
     position: absolute;
-    bottom: 55px;
-    right: 0;
+    top: calc(10vh + 10px);
+    left: 110px;
     height: 80vh;
     max-height: calc(100vh - 65px);
     min-width: calc(100vw - 125px);
@@ -274,5 +277,18 @@ body{
 .chatbox{
   height: 100%;
   background-color: white;
-  opacity: .5;
+  opacity: .7;
+}
+
+
+@media screen and (max-width: 778px) {
+  .innerdesktop{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: url("https://i.imgur.com/1ELykkZ.jpg");
+
+      background-repeat: repeat
+      }
+
 }
