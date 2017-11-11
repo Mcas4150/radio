@@ -60,6 +60,16 @@
  <script> var time = moment('<%= Time.now %>');
 
 </script>
+
+<script>
+  $(document).ready(function() {
+
+     $('#sports').on('click', () => {
+    $('#sportsplayer').toggle(100);
+
+  });
+  });
+</script>
  <script>
             function date_time(id)
             {
