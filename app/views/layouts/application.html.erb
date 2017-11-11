@@ -31,7 +31,7 @@
           width: '500',
           videoId:'D4lqBB_wXQU',
           events: {
-            'onReady': onPlayerReady,
+            'onClick': onPlayerReady,
             'onStateChange': onPlayerStateChange
           }
         });
@@ -66,6 +66,11 @@
 
      $('#sports').on('click', () => {
     $('#sportsplayer').toggle(100);
+
+  });
+
+      $('#chat').on('click', () => {
+    $('#chatwindow').toggle(100);
 
   });
   });
