@@ -297,8 +297,8 @@ body{
 
 #showwindow{
   display:none;
-  top: 100px;
-  right: 30px;
+  top: 20vh;
+  right: 10vw;
 }
 
 @media screen and (max-width: 778px) {
